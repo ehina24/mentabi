@@ -1,3 +1,21 @@
+<?php
+
+require_once __DIR__ . "/config.php";
+
+$db= new PDO(DB_DSN, DB_USER, DB_PASS);
+
+$table= RAMEN_LIST;
+$sql= "SELECT * FROM {$table}";
+$stmt= $db -> prepare($sql);
+$stmt -> execute();
+
+$ramens= [];
+while($row =$stmt -> fetch(PDO::FETCH_ASSOC)){
+    $ramens[]= $row;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -35,6 +53,25 @@
 
         <h3>あなたにピッタリのラーメンを診断しよう！</h3>
         <button>診断する</button>
+
+        <button>絞り込み</button>
+        <?php foreach($ramens as $ramen):?>
+            <div>
+                <img src="./img/<?= $ramen["ramen_img"] ?>" alt="ラーメン画像">
+                <h4><?= $ramen["name"] ?></h4>
+                <div>
+                    <span><?= $ramen["tag_1"] ?></span>
+                    <span><?= $ramen["tag_2"] ?></span>
+                    <span><?= $ramen["tag_3"] ?></span>
+                </div>
+            </div>
+        <?php endforeach ?>
     </tbody>
+
+    <tfoot>
+        <footer>
+            <p><small>&copy;mentabi</small></p>
+        </footer>
+    </tfoot>
 </body>
 </html>
