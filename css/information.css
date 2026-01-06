@@ -1,0 +1,68 @@
+/*全体*/
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F7EFE3;
+    color: #2a2a2a;
+}
+.contentWrap{
+    margin: 0 16px;
+}
+
+/*三角ボタン*/
+.triangle{
+    width: 0;
+    height: 0;
+    background: none;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 25px solid #2D8075;
+    border-left: none; 
+    margin-top: 24px;
+}
+
+/*店舗情報*/
+.ramenItem{
+    display: flex;
+    gap: 16px;
+}
+.imgWrap{
+    margin-top: 24px;
+}
+.textWrap{
+    h4{
+        font-size: 22px;
+        font-weight: 400;
+    }
+    span{
+        background-color: aqua;
+        padding: 6px;
+        font-size: 10px;
+    }
+    p{
+        font-size: 10px;
+    }
+}
+
+/*ラーメン説明*/
+h1{
+    font-size: 20px;
+    font-weight: 400;
+}
+h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+p{
+    font-size: 15px;
+}
+
+/*マップ*/
+.map{
+    width: 313px;
+    height: 160px;
+    margin: 16px auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
