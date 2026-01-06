@@ -110,15 +110,17 @@ function tagClass($tag){
         <?php foreach (array_chunk($ramens,2) as $pair):?>
             <div class="row">
                 <?php foreach($pair as $ramen):?>
-                    <div class="ramenItem">
-                        <img src="./img/<?= $ramen["ramen_img"] ?>" alt="ラーメン画像">
-                        <h4><?= $ramen["name"] ?></h4>
-                        <div>
-                            <span><?= $ramen["tag_1"] ?></span>
-                            <span><?= $ramen["tag_2"] ?></span>
-                            <span><?= $ramen["tag_3"] ?></span>
+                    <a href="information.php?id=<?= $ramen["id"] ?>" class="ramen_info">
+                        <div class="ramenItem">
+                            <img src="./img/<?= $ramen["ramen_img"] ?>" alt="ラーメン画像">
+                            <h4><?= $ramen["name"] ?></h4>
+                            <div>
+                                <span><?= $ramen["tag_1"] ?></span>
+                                <span><?= $ramen["tag_2"] ?></span>
+                                <span><?= $ramen["tag_3"] ?></span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 <?php endforeach ?>
             </div>
         <?php endforeach ?>
