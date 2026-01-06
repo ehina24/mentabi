@@ -38,7 +38,7 @@ function tagClass($tag){
     <header>
         <nav class="headerNav">
             <img src="./img/logo.svg" alt="サイトロゴ">
-            <a href="">ログイン</a>
+            <a href="login.php">ログイン</a>
         </nav>
     </header>
 
