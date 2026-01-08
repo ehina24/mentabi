@@ -103,7 +103,7 @@ function tagClass($tag){
 
         <div class="inductionWrap">
             <h3>あなたにピッタリのラーメンを診断しよう！</h3>
-            <button>診断する</button>
+            <button onclick="location.href='diagnosis.php'">診断する</button>
         </div>
 
         <button class="narrowDown">絞り込み</button>
