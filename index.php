@@ -14,15 +14,6 @@ while($row =$stmt -> fetch(PDO::FETCH_ASSOC)){
     $ramens[]= $row;
 }
 
-//タグ色切り替え
-function tagClass($tag){
-    return match($tag){
-        "車庫前系"=>"syakomae",
-        "井出系"=>"ide",
-        "独自系"=>"unique",
-        "その他"=>"other"
-    };
-}
 
 ?>
 

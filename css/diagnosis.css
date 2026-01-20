@@ -1,0 +1,94 @@
+/*全体*/
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F7EFE3;
+    color: #2a2a2a;
+}
+
+/*ヘッダー*/
+.headerNav{
+    display: flex;
+    gap: 140px;
+    align-items: center;
+    margin: 8px 0 8px 0;
+    img{
+        margin-left: 20px;
+    }
+    h1{
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+/*紙部分*/
+.paperWrap{
+    background-color: #FFFDF1;
+    width: 350px;
+    padding-bottom: 32px;
+}
+h2{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/*質問部分*/
+.questionWrap{
+    background-color: #FFF9D3;
+    width: 317px;
+    height: 531px;
+    margin: 0 auto;
+    padding-left: 8px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 12px 0 6px;
+}
+p{
+    font-size: 16px;
+}
+.choiceWrap{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+.choice{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    input{
+        display:none;
+    }
+    .box{
+        width: 20px;
+        height: 20px;
+        background-color: #D9D9D9;
+
+    }
+}
+.choice input:checked+.box{
+    background-color: #2D8075;
+}
+
+/*ボタン*/
+button{
+    background-color: #D6482F;
+    width: 40%;
+    color: #FFF;
+    border: none;
+    border-radius: 16px;
+    padding: 6px 29px 5px 29px;
+}
+.btn{
+    text-align: center;
+}
+
+
