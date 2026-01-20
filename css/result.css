@@ -1,0 +1,84 @@
+/*全体*/
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #F7EFE3;
+    color: #2a2a2a;
+}
+
+/*ヘッダー*/
+.headerNav{
+    display: flex;
+    gap: 140px;
+    align-items: center;
+    margin: 8px 0 8px 0;
+    img{
+        margin-left: 20px;
+    }
+    h1{
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+/*紙部分*/
+.paperWrap{
+    background-color: #FFFDF1;
+    width: 350px;
+    padding-bottom: 32px;
+}
+
+/*三角ボタン*/
+.triangleBtn{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 24px auto 0;
+    background: transparent;
+    border: none;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 25px solid #2D8075;
+    line-height: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    display: block;
+
+}
+
+/*見えないテキストたち*/
+.hiddenText{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    text-align: center;
+}
+.hiddenText.open{
+    max-height: 560px;
+}
+h3{
+    font-weight: 400;
+    font-size: 18px;
+    display: inline-block;
+    border-bottom: 2px solid #2a2a2a;
+}
+
+/*画像*/
+img{
+    display: block;
+    margin:  16px  auto;
+}
+h2{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    span{
+        font-weight: bold;
+    }
+}

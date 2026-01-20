@@ -9,7 +9,7 @@
 <body>
     <header>
         <nav class="headerNav">
-            <img src="./img/logo.svg" alt="サイトロゴ">
+            <a href="index.php"><img src="./img/logo.svg" alt="サイトロゴ"></a>
             <h1>ラーメン診断</h1>
         </nav>
     </header>
