@@ -126,17 +126,26 @@ h1{
 /*ラーメン詳細*/
 .row{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 16px;
     margin-bottom: 24px;
     margin-top: 24px;
 }
 .ramenItem{
-    width: 48%;
+    width: 100%;
     text-align: left;
     h4{
         font-size: 14px;
         font-weight: 400;
         font-style: normal;
+    }
+    span{
+        display: inline-block;
+        background-color: #2D8075;
+        color: #FFF;
+        padding: 4px;
+        font-size: 10px;
+        align-self: flex-start;
     }
 }
 .ramen_info{
@@ -144,8 +153,14 @@ h1{
     color: inherit;
     display: block;
 }
+.tagWrap{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 /*コピーライト*/
 footer p{
     text-align: center;
 }
+

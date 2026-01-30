@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once __DIR__ . "/config.php";
 
 $db= new PDO(DB_DSN, DB_USER, DB_PASS);
@@ -13,7 +13,6 @@ $ramens= [];
 while($row =$stmt -> fetch(PDO::FETCH_ASSOC)){
     $ramens[]= $row;
 }
-
 
 ?>
 
@@ -29,7 +28,11 @@ while($row =$stmt -> fetch(PDO::FETCH_ASSOC)){
     <header>
         <nav class="headerNav">
             <img src="./img/logo.svg" alt="サイトロゴ">
-            <a href="login.php">ログイン</a>
+            <?php if(isset($_SESSION['user'])):?>
+                <a href="mypage.php">マイページ</a>
+            <?php else:?>
+                <a href="login.php">ログイン</a>
+            <?php endif;?>
         </nav>
     </header>
 
@@ -105,9 +108,11 @@ while($row =$stmt -> fetch(PDO::FETCH_ASSOC)){
                         <div class="ramenItem">
                             <img src="./img/<?= $ramen["ramen_img"] ?>" alt="ラーメン画像">
                             <h4><?= $ramen["name"] ?></h4>
-                            <div>
-                                <span><?= $ramen["tag_1"] ?></span>
-                                <span><?= $ramen["tag_2"] ?></span>
+                            <div class="tagWrap">
+                                <div>
+                                    <span><?= $ramen["tag_1"] ?></span>
+                                    <span><?= $ramen["tag_2"] ?></span>
+                                </div>
                                 <span><?= $ramen["tag_3"] ?></span>
                             </div>
                         </div>

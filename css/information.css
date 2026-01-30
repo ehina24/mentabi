@@ -36,7 +36,8 @@ body{
         font-weight: 400;
     }
     span{
-        background-color: aqua;
+        background-color: #2D8075;
+        color: #FFF;
         padding: 4px;
         font-size: 10px;
     }
