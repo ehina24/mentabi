@@ -29,7 +29,10 @@ while($row =$stmt -> fetch(PDO::FETCH_ASSOC)){
         <nav class="headerNav">
             <img src="./img/logo.svg" alt="サイトロゴ">
             <?php if(isset($_SESSION['user'])):?>
-                <a href="mypage.php">マイページ</a>
+                <div class="linkWrap">
+                    <a href="mypage.php">マイページ</a>
+                    <a href="logout.php">ログアウト</a>
+                </div>
             <?php else:?>
                 <a href="login.php">ログイン</a>
             <?php endif;?>
