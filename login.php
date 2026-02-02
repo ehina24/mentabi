@@ -7,7 +7,7 @@
         $password = $_POST["password"];
 
         $db = new PDO(DB_DSN,DB_USER,DB_PASS);
-        $sql = "SELECT * FROM users WHERE email = :email";
+        $sql = "SELECT * FROM user_list WHERE email = :email";
         $stmt = $db->prepare($sql);
         $stmt -> bindValue(':email',$email);
         $stmt->execute();
@@ -25,6 +25,7 @@
             $error = 'メールアドレスまたはパスワードが違います';
         }
     }
+
 ?>
 
 <!DOCTYPE html>

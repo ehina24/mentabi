@@ -1,8 +1,3 @@
-
-DROP TABLE IF EXISTS ramen_list;
-
-
-
 CREATE TABLE ramen_list (
     id INT AUTO_INCREMENT,    -- 主キー
     name VARCHAR(50) NOT NULL, -- 店名
