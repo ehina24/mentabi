@@ -20,12 +20,13 @@ h1{
     font-size: 24px;
     font-weight: 400;
 }
+
+/*スタンプカード*/
 .stampCardWrap{
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
-
 .paper{
     width: 327px;
     height: 200px;
@@ -50,7 +51,16 @@ h1{
 .unique{
     background-color: #802D2E;
 }
-
+.btnWrap{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.btnWrap img{
+    width: 24px;
+    height: 24px;
+    align-self: flex-end;
+}
 .stampPlace{
     display: grid;
     grid-template-columns: 60px 60px 60px;

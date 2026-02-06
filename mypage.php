@@ -26,7 +26,10 @@ if(!isset($_SESSION['user'])){
         <h1>私のラーメン記録</h1>
         <div class="stampCardWrap">
             <div class="paper">
-                <p class="syakomae">#車庫前系</p>
+                <div class="btnWrap">
+                    <p class="syakomae">#車庫前系</p>
+                    <button><img src="./img/stamp.png" alt="スタンプマーク"></button>
+                </div>
                 <div class="stampPlace">
                     <div>まるイ</div>
                     <div>中華そば<br>まるみ</div>
@@ -38,7 +41,10 @@ if(!isset($_SESSION['user'])){
             </div>
     
             <div class="paper">
-                <p class="ide">#井出系</p>
+                <div class="btnWrap">
+                    <p class="ide">#井出系</p>
+                    <button><img src="./img/stamp.png" alt="スタンプマーク"></button>
+                </div>
                 <div class="stampPlace">
                     <div>井出商店</div>
                     <div>中華そば<br>丸田屋</div>
@@ -50,7 +56,10 @@ if(!isset($_SESSION['user'])){
             </div>
     
             <div class="paper">
-                <p class="unique">#独自系</p>
+                <div class="btnWrap">
+                    <p class="unique">#独自系</p>
+                    <button><img src="./img/stamp.png" alt="スタンプマーク"></button>
+                </div>
                 <div class="stampPlace">
                     <div>龍王亭</div>
                     <div>まる京<br>中華そば</div>
