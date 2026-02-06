@@ -100,7 +100,11 @@ while($row =$stmt -> fetch(PDO::FETCH_ASSOC)){
 
         <div class="inductionWrap">
             <h3>あなたにピッタリのラーメンを診断しよう！</h3>
-            <button onclick="location.href='diagnosis.php'">診断する</button>
+            <?php if(isset($_SESSION['user'])): ?>
+                <button onclick="location.href='diagnosis.php'">診断する</button>
+            <?php else: ?>
+                <button onclick="location.href='login.php'">診断する</button>
+            <?php endif; ?>
         </div>
 
         <button class="narrowDown">絞り込み</button>
